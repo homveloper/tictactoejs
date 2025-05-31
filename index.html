@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="src/infrastructure/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>🎮 Tic Tac Toe</h1>
+            <div class="status-container">
+                <div id="status" class="status">Player X's Turn</div>
+                <button id="resetBtn" class="reset-btn">New Game</button>
+            </div>
+        </header>
+
+        <main class="game-main">
+            <div id="gameBoard" class="game-board">
+                <!-- 게임 보드는 JavaScript로 동적 생성 -->
+            </div>
+        </main>
+
+        <footer class="game-footer">
+            <p>🏗 Clean Architecture + TDD로 구현</p>
+            <p>🧪 테스트: <span id="testStatus">Loading...</span></p>
+        </footer>
+    </div>
+
+    <!-- 게임 결과 모달 -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Game Result</h2>
+            <p id="modalMessage">Game Over!</p>
+            <button id="modalNewGame" class="modal-btn">New Game</button>
+        </div>
+    </div>
+
+    <!-- JavaScript 모듈 로드 -->
+    <script type="module" src="src/infrastructure/GameUI.js"></script>
+</body>
+</html>

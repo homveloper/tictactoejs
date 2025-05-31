@@ -1,0 +1,28 @@
+{
+  "name": "tictactoe-game",
+  "version": "1.0.0",
+  "description": "A TDD-based Tic Tac Toe game with Clean Architecture",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./run.ps1",
+    "test": "node --test tests/**/*.test.js",
+    "test:watch": "node --test --watch tests/**/*.test.js",
+    "serve": "node server.cjs",
+    "serve:python": "python -m http.server 8080",
+    "dev": "npm run serve",
+    "open": "powershell -ExecutionPolicy Bypass -File ./run.ps1 -Open"
+  },
+  "keywords": [
+    "tictactoe",
+    "game",
+    "javascript",
+    "tdd",
+    "clean-architecture"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "node:test": "latest"
+  }
+}
